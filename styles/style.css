@@ -11,6 +11,7 @@
 */
 
 .page {
+  font-variation-settings: "wght" 400;
   margin-inline: auto;
   padding-block-end: 100px;
   font-family: var(--font-main);
@@ -76,7 +77,7 @@
 
 .card__title {
   padding: 5px 10px;
-  font-weight: var(--inter-wght-title);
+  font-variation-settings: "wght" var(--inter-wght-title);
   color: var(--main-text-color);
   font-size: 18px;
   line-height: 22px;
@@ -246,6 +247,7 @@
 }
 
 .button {
+  isolation: isolate;
   background-color: white;
   border: 2px solid black;
   transition: box-shadow 0.3s ease;
@@ -254,19 +256,24 @@
   overflow: hidden;
 }
 
-.button__text {
-  font-family: var(--font-accent);
-  font-weight: var(--pressstart2p-whgt-text);
-  font-style: normal;
-  font-size: 14px;
-  height: 13px;
-  line-height: 90%;
-  color: var(--btn-text-color);
-  mix-blend-mode: difference;
+.card__like-button {
+  margin: 0;
+  padding-inline: 35px;
+  padding-block: 7.5px;
+}
+
+.save-button {
+  padding-inline: 20px;
+  padding-block: 17px;
+  margin-inline: auto;
+  position: relative;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
 }
 
 .button::before {
-  align-self: center;
   content: "";
   position: absolute;
   inset: 0;
@@ -289,11 +296,15 @@
   cursor: pointer;
 }
 
-.card__like-button {
-  margin: 0;
-  padding-inline: 35px;
-  padding-block: 7.5px;
-  border: 2px solid black;
+.button__text {
+  font-family: var(--font-accent);
+  font-weight: var(--pressstart2p-whgt-text);
+  font-style: normal;
+  font-size: 14px;
+  height: 13px;
+  line-height: 90%;
+  color: var(--btn-text-color);
+  mix-blend-mode: difference;
 }
 
 .footer {
@@ -302,24 +313,6 @@
   padding-inline: clamp(16px, 6vw, 122px);
   padding-block-start: 50px;
   background-color: white;
-}
-
-.save-button {
-  border: 2px solid black;
-  padding-inline: 20px;
-  padding-block: 17px;
-  display: block;
-  margin-inline: auto;
-}
-
-.save-button__content {
-  position: relative;
-  z-index: 1;
-  mix-blend-mode: difference;
-  display: flex;
-  gap: 8px;
-  justify-content: center;
-  align-items: center;
 }
 
 .dialog {
@@ -362,11 +355,15 @@
   align-items: center;
 }
 
+.content__floppy-and-text .floppy-icon {
+  inline-size: 39px;
+  block-size: 39px;
+}
+
 .dialog__close-button {
   padding-inline: 116.5px;
   padding-block: 12.5px;
-  border: 2px solid black;
-  background-color: transparent;
+  background-color: var(--btn-text-color);
 }
 
 .dialog__text {
