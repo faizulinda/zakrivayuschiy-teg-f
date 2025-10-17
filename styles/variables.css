@@ -1,39 +1,30 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-    --font-main: "Inter", sans-serif;
-    --font-accent: "PressStart2P", sans-serif;
+  --font-main: "Inter", sans-serif;
+  --font-accent: "PressStart2P", sans-serif;
 
-    /* Переменные для толщины шрифта */
-    --inter-wght-text: 410;   /* основной текст */
-    --inter-wght-title: 715;  /* заголовки */
-    --pressstart2p-whgt-text: 400;
+  /* Переменные для толщины шрифта */
+  --inter-wght-text: 410; /* основной текст */
+  --inter-wght-title: 715; /* заголовки */
+  --pressstart2p-whgt-text: 400;
 
-    /* Переменные для цвета текста */
-    --main-text-color: #000;
-    --accent-color: #000;
+  /* Переменные для цвета текста */
+  --main-text-color: #000;
+  --accent-color: #000;
 
-    --btn-text-color: #fff;
-    --core-color: #fff;
-    --contur-color: #000;
-    --animation-fill-color: red;
-    --sparks-color: var(--animation-fill-color);
-    --main-body-color: var(--animation-fill-color);
+  --btn-text-color: #fff;
+  --core-color: #fff;
+  --contur-color: #000;
+  --animation-fill-color: red;
+  --sparks-color: var(--animation-fill-color);
+  --main-body-color: var(--animation-fill-color);
 
-    /* Переменная для градиентного фона */
-    --page-bg-image:
-        repeating-linear-gradient(
-            to right,
-            #d3d3d3 0 2px,
-            transparent 2px 4px
-        ),
-        repeating-linear-gradient(
-            to top,
-            #d3d3d3 0 2px,
-            transparent 2px 4px
-        ),
-        linear-gradient(
-            to bottom,
-            #e7e7e7 0.01%,
-            #1a1a1a 100%
-        );
+  /* Переменная для градиентного фона */
+  --page-bg-image: repeating-linear-gradient(
+      to right,
+      #d3d3d3 0 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(to top, #d3d3d3 0 2px, transparent 2px 4px),
+    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
 }
