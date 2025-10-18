@@ -1,12 +1,12 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
   --font-main: "Inter", sans-serif;
-  --font-accent: "PressStart2P", sans-serif;
+  --font-accent: "PressStart2P", fantasy;
 
   /* Переменные для толщины шрифта */
-  --inter-wght-text: 410; /* основной текст */
-  --inter-wght-title: 715; /* заголовки */
-  --pressstart2p-whgt-text: 400;
+  --basic-text-wght: 410; /* основной текст */
+  --basic-title-wght: 715; /* заголовки */
+  --accent-text-wght: 400;
 
   /* Переменные для цвета текста */
   --main-text-color: #000;
