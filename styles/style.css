@@ -301,7 +301,7 @@
   outline: none;
 }
 
-.button:focus {
+.button:focus-visible {
   box-shadow: 2px 2px 0px 0px var(--accent-color);
 }
 
