@@ -322,7 +322,6 @@
   padding-inline: clamp(16px, 6vw, 122px);
 }
 
-
 .floppy-icon {
   display: block;
 }
@@ -336,7 +335,6 @@
   inline-size: 21px;
   block-size: 21px;
 }
-
 
 /* DIALOG*/
 .dialog {
@@ -389,7 +387,6 @@
   align-items: center;
 }
 
-
 @media (width <= 375px) {
   .header {
     inline-size: 375px;
@@ -439,7 +436,7 @@
     padding-block: 30px;
   }
 
-    .dialog__content {
+  .dialog__content {
     inline-size: 261px;
   }
 }
