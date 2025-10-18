@@ -160,7 +160,7 @@
 }
 
 .card__reaction {
-  margin: 24px 25px 24px 177px;
+  margin: 23px 25px 23px 177px;
   display: flex;
   align-items: center;
   justify-self: end;
@@ -267,7 +267,7 @@
   align-items: center;
   display: flex;
   margin: 0;
-  padding-block: 9.5px;
+  padding-block: 12px;
   width: 130px;
   justify-content: center;
 }
@@ -379,7 +379,6 @@
 }
 
 .dialog__close-button {
-  padding-inline: auto;
   padding-block: 12.5px;
   background-color: var(--btn-text-color);
   display: flex;
@@ -398,7 +397,7 @@
   }
 
   .content {
-    inline-size: 373px;
+    inline-size: 375px;
   }
 
   .card {
@@ -406,15 +405,16 @@
   }
 
   .card__text {
-    margin-block-start: 29px;
+    margin-block-start: 27px;
   }
 
   .cards__item {
-    inline-size: 373px;
+    inline-size: 375px;
   }
 
   .footer {
-    inline-size: 371px;
+    margin-block-start: 50px;
+    inline-size: 375px;
   }
 
   .save-button {
@@ -434,6 +434,7 @@
   .dialog {
     padding-inline: 40px;
     padding-block: 30px;
+    min-inline-size: fit-content;
   }
 
   .dialog__content {

@@ -49,9 +49,9 @@
                   class="like-icon"
                   xmlns="http://www.w3.org/2000/svg"
                   width="39"
-                  height="36"
+                  height="38"
                   fill="none"
-                  viewBox="0 0 39 36"
+                  viewBox="0 0 39 38"
                 >
                   <g class="heart">
                     <path
@@ -115,9 +115,9 @@
                   class="like-icon"
                   xmlns="http://www.w3.org/2000/svg"
                   width="39"
-                  height="36"
+                  height="38"
                   fill="none"
-                  viewBox="0 0 39 36"
+                  viewBox="0 0 39 38"
                 >
                   <g class="heart">
                     <path
@@ -178,9 +178,9 @@
                   class="like-icon"
                   xmlns="http://www.w3.org/2000/svg"
                   width="39"
-                  height="36"
+                  height="38"
                   fill="none"
-                  viewBox="0 0 39 36"
+                  viewBox="0 0 39 38"
                 >
                   <g class="heart">
                     <path
@@ -243,9 +243,9 @@
                   class="like-icon"
                   xmlns="http://www.w3.org/2000/svg"
                   width="39"
-                  height="36"
+                  height="38"
                   fill="none"
-                  viewBox="0 0 39 36"
+                  viewBox="0 0 39 38"
                 >
                   <g class="heart">
                     <path
@@ -309,9 +309,9 @@
                   class="like-icon"
                   xmlns="http://www.w3.org/2000/svg"
                   width="39"
-                  height="36"
+                  height="38"
                   fill="none"
-                  viewBox="0 0 39 36"
+                  viewBox="0 0 39 38"
                 >
                   <g class="heart">
                     <path
@@ -372,9 +372,9 @@
                   class="like-icon"
                   xmlns="http://www.w3.org/2000/svg"
                   width="39"
-                  height="36"
+                  height="38"
                   fill="none"
-                  viewBox="0 0 39 36"
+                  viewBox="0 0 39 38"
                 >
                   <g class="heart">
                     <path
@@ -437,9 +437,9 @@
                   class="like-icon"
                   xmlns="http://www.w3.org/2000/svg"
                   width="39"
-                  height="36"
+                  height="38"
                   fill="none"
-                  viewBox="0 0 39 36"
+                  viewBox="0 0 39 38"
                 >
                   <g class="heart">
                     <path
@@ -506,9 +506,9 @@
                   class="like-icon"
                   xmlns="http://www.w3.org/2000/svg"
                   width="39"
-                  height="36"
+                  height="38"
                   fill="none"
-                  viewBox="0 0 39 36"
+                  viewBox="0 0 39 38"
                 >
                   <g class="heart">
                     <path
@@ -544,39 +544,37 @@
             </div>
           </article>
         </li>
-        <li>
-          <section class="footer">
-            <button
-              class="save-button button"
-              type="button"
-              onclick="window['dialog'].showModal()"
-            >
-              <svg class="floppy-icon" aria-hidden="true">
+      </ul>
+      <section class="footer">
+        <button
+          class="save-button button"
+          type="button"
+          onclick="window['dialog'].showModal()"
+        >
+          <svg class="floppy-icon" aria-hidden="true">
+            <use href="./svg/floppy.svg#floppy"></use>
+          </svg>
+          <span class="button__text">Сохранить на память</span>
+        </button>
+        <dialog class="dialog" id="dialog">
+          <div class="dialog__content">
+            <div class="content__floppy-and-text">
+              <svg class="dialog__floppy-icon" aria-hidden="true">
                 <use href="./svg/floppy.svg#floppy"></use>
               </svg>
-              <span class="button__text">Сохранить на память</span>
+              <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
+            </div>
+            <button
+              class="dialog__close-button button"
+              type="button"
+              onclick="window['dialog'].close()"
+              aria-controls="dialog"
+            >
+              <span class="button__text">ОК</span>
             </button>
-            <dialog class="dialog" id="dialog">
-              <div class="dialog__content">
-                <div class="content__floppy-and-text">
-                  <svg class="dialog__floppy-icon" aria-hidden="true">
-                    <use href="./svg/floppy.svg#floppy"></use>
-                  </svg>
-                  <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
-                </div>
-                <button
-                  class="dialog__close-button button"
-                  type="button"
-                  onclick="window['dialog'].close()"
-                  aria-controls="dialog"
-                >
-                  <span class="button__text">ОК</span>
-                </button>
-              </div>
-            </dialog>
-          </section>
-        </li>
-      </ul>
+          </div>
+        </dialog>
+      </section>
     </main>
     <script src="./scripts/like.js"></script>
   </body>
